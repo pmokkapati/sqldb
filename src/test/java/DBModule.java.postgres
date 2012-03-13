@@ -1,0 +1,23 @@
+import com.google.inject.AbstractModule;
+import javax.sql.DataSource;
+import org.postgresql.jdbc3.Jdbc3PoolingDataSource;
+
+public class DBModule extends AbstractModule {
+    private final DataSource _d;
+
+    public DBModule() {
+        Jdbc3PoolingDataSource source = new Jdbc3PoolingDataSource();
+        source.setDataSourceName("Tengo DB pool");
+        source.setServerName("localhost");
+        source.setDatabaseName("tengo");
+        source.setUser("root");
+        source.setPassword("aka1198");
+        source.setMaxConnections(10);
+        _d = source;
+    }
+
+    @Override 
+    protected void configure() {
+        bind(javax.sql.DataSource.class).toInstance(_d);
+    }
+}
