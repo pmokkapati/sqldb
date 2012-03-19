@@ -23,11 +23,13 @@ public class TransactionalInterceptor implements MethodInterceptor {
         if ( ! DBManager.beginTransaction() ) {
             topLevel = false;
         }
+            
         try {
             ret = inv.proceed();
             if ( topLevel ) {
                 DBManager.commitTransaction();
             }
+                
         }
         catch (Exception e) {
             e.printStackTrace();

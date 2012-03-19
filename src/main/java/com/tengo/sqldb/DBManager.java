@@ -81,7 +81,6 @@ public class DBManager {
             return true;
         }
         else {
-            _transactionalCnt.set(new Integer(cnt.intValue()+1));
             return false;
         }
     }
@@ -91,7 +90,7 @@ public class DBManager {
         if ( cnt == null) {
             throw new DBException("No Transaction to commit");
         }
-        else if ( cnt.intValue() == 1) {
+        else {
             // Commit all the DBManagers in thread
             ArrayList<DBManager> mgrs = _dbManagers.get();
             if ( mgrs != null) {
@@ -101,9 +100,6 @@ public class DBManager {
                 _dbManagers.set(null);
             }
             _transactionalCnt.set(null);
-        }
-        else {
-            _transactionalCnt.set(new Integer(cnt.intValue()-1));
         }
     }
     static void rollbackTransaction() throws DBException {
