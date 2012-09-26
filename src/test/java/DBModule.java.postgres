@@ -11,7 +11,7 @@ public class DBModule extends AbstractModule {
         source.setServerName("localhost");
         source.setDatabaseName("tengo");
         source.setUser("root");
-        source.setPassword("aka1198");
+        source.setPassword("demo");
         source.setMaxConnections(10);
         _d = source;
     }

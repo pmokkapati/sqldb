@@ -1,12 +1,7 @@
 /*
- * 
- * Copyright 2012 by Tengo, Inc.
- * All rights reserved.
+ * Annotation to indicate mapping of a column to select, insert ..
  *
- * This software is the confidential and proprietary information 
- * of Tengo, Inc.
- *
- * @author psm
+ * @author Prasad Mokkapati  prasadm80@gmail.com
  */
 package com.tengo.sqldb;
 import java.lang.annotation.Documented;
@@ -23,7 +18,7 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * Annotation on a bean property - getter/setter method to indicate mapping
- * infor for a column
+ * for for a column
  */
 public @interface Column {
     String name() default "";

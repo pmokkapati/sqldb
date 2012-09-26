@@ -1,4 +1,8 @@
-
+/*
+ * Duplicate value exception
+ *
+ * @author Prasad Mokkapati  prasadm80@gmail.com
+ */
 package com.tengo.sqldb;
 import java.io.Serializable;
 

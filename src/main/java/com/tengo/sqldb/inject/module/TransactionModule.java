@@ -1,11 +1,7 @@
 /*
- * Copyright 2012 by Tengo, Inc.
- * All rights reserved.
+ * Transactional Module (Guice) to intercept Transactional methods
  *
- * This software is the confidential and proprietary information 
- * of Tengo, Inc.
- *
- * @author psm
+ * @author Prasad Mokkapati  prasadm80@gmail.com
  */
 package com.tengo.sqldb.inject.module;
 

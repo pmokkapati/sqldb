@@ -1,3 +1,7 @@
+/*
+ *
+ * @author prasad mokkapati - prasadm80@gmail.com
+ */
 import com.google.inject.AbstractModule;
 import javax.sql.DataSource;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
@@ -10,7 +14,7 @@ public class DBModule extends AbstractModule {
         source.setServerName("localhost");
         source.setDatabaseName("tengo");
         source.setUser("prasad");
-        source.setPassword("aka1198");
+        source.setPassword("demo");
         _d = source;
     }
 

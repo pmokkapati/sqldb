@@ -1,12 +1,7 @@
 /*
- * 
- * Copyright 2012 by Tengo, Inc.
- * All rights reserved.
+ * Property that is nested .. I.E. Returns another bean
  *
- * This software is the confidential and proprietary information 
- * of Tengo, Inc.
- *
- * @author psm
+ * @author Prasad Mokkapati  prasadm80@gmail.com
  */
 package com.tengo.sqldb;
 

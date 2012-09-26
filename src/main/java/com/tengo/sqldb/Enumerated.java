@@ -1,12 +1,7 @@
 /*
- * 
- * Copyright 2012 by Tengo, Inc.
- * All rights reserved.
+ * Annotation to indicate how an enum needs to be mapped in the database
  *
- * This software is the confidential and proprietary information 
- * of Tengo, Inc.
- *
- * @author psm
+ * @author Prasad Mokkapati  prasadm80@gmail.com
  */
 package com.tengo.sqldb;
 

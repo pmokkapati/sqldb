@@ -1,12 +1,6 @@
 /*
- * 
- * Copyright 2012 by Tengo, Inc.
- * All rights reserved.
  *
- * This software is the confidential and proprietary information 
- * of Tengo, Inc.
- *
- * @author psm
+ * @author prasad mokkapati - prasadm80@gmail.com
  */
 import java.io.Serializable;
 import com.tengo.sqldb.*;
